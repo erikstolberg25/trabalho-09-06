@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #00ff88;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffaa;
+  font-size: 2.5em;
+}
+
+/* Formulário */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border: 2px solid #00ffaa;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffaa88;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #00ddcc;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: none;
+  background-color: #222;
+  color: #00ff88;
+  border-left: 4px solid #00ffaa;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s, background-color 0.3s;
+}
+
+input:focus {
+  border-left-color: #ff00ff;
+  background-color: #111;
+}
+
+/* Botões */
+button {
+  background-color: #111;
+  color: #00ffaa;
+  border: 2px solid #00ffaa;
+  padding: 12px 20px;
+  margin-top: 25px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, border 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #00ffaa;
+  color: #111;
+  border-color: #ff00ff;
+  transform: scale(1.05);
+}
+
+/* Resultado */
+.resultado {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #111;
+  color: #00ff88;
+  padding: 20px;
+  border: 2px dashed #00ffaa;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  box-shadow: 0 0 10px #00ffaa88;
+}
+
+/* Resultado inline */
+p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+#resultado {
+  color: #ff00ff;
+  font-weight: bold;
+}
+
+/* Testes resultados */
+#testes-resultados {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border: 2px solid #ff00ff;
+  color: #ffffff;
+  font-size: 0.95em;
+  white-space: pre-wrap;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #ff00ff88;
+}

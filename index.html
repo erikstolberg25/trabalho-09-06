@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Clientes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <h1>FORMULÁRIO</h1>
+
+  <form id="formulario" onsubmit="mostrarResultado(); return false;">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" placeholder="Digite sua idade" min="1" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+    <button type="submit">Cadastrar</button>
+
+    <button type="button" id="btnLimpar">Limpar</button>
+    <button type="button" id="btnValidarEmail">Validar Email</button>
+    <button type="button" id="btnIdadeDias">Calcular Idade em Dias</button>
+    <button type="button" id="btnSaudacao">Saudação</button>
+  </form>
+
+  <div class="resultado" id="resultadoDiv" style="display: none;">
+    <p><strong>Nome:</strong> <span id="resNome"></span></p>
+    <p><strong>Idade:</strong> <span id="resIdade"></span></p>
+    <p><strong>Email:</strong> <span id="resEmail"></span></p>
+  </div>
+
+  <p>Resultado: <span id="resultado">0</span></p>
+ <button id="rodarTestesUnitBtn">Rodar Testes Unitários</button>
+  <button type="button" id="rodarTestesComponentBtn">Rodar Testes de Componente</button>
+
+  <div id="testes-resultados"></div>
+
+  
+  <script src="src/formulariodecadastro.js"></script>
+  <script src="src/rodarTestes.js"></script>
+  <script src="tests/unitario.test.js"></script>
+  <script src="tests/component.test.js"></script>
+
+</body>
+</html>
