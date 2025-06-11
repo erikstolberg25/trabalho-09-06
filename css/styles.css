@@ -3,119 +3,174 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background-color: #0f0f0f;
-  color: #00ff88;
-  padding: 40px;
+  background-color: #0a0a0a;
+  color: #00ff99;
+  padding: 50px;
   min-height: 100vh;
+  text-shadow: 0 0 10px #00ff99;
+  font-weight: 700;
 }
 
 /* Título */
 h1 {
   text-align: center;
-  margin-bottom: 30px;
-  color: #00ffcc;
-  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffaa;
-  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #f4f4f4;
+  font-size: 3em;
+  text-shadow:
+    0 0 10px #00ffdd67,
+    0 0 20px #00ffaa,
+    0 0 30px #00ffaa,
+    0 0 40px #00ffaa,
+    0 0 50px #00ffaa;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* Formulário */
 form {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #1a1a1a;
-  padding: 30px;
-  border: 2px solid #00ffaa;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #00ffaa88;
+  background-color: #111111;
+  padding: 40px;
+  border: 3px solid #00ffaa;
+  border-radius: 15px;
+  box-shadow:
+    0 0 20px #00ffaa,
+    inset 0 0 15px #00ffaa;
+  transition: box-shadow 0.4s ease;
+}
+
+form:hover {
+  box-shadow:
+    0 0 40px #ff00ff,
+    inset 0 0 25px #ff00ff;
 }
 
 /* Labels */
 label {
   display: block;
-  margin-top: 20px;
-  font-weight: bold;
-  color: #00ddcc;
+  margin-top: 25px;
+  font-weight: 900;
+  color: #00eecc;
+  text-shadow: 0 0 5px #00eecc;
+  letter-spacing: 1.5px;
+  font-size: 1.1em;
 }
 
 /* Inputs */
 input {
   width: 100%;
-  padding: 12px;
-  margin-top: 5px;
+  padding: 15px;
+  margin-top: 8px;
   border: none;
-  background-color: #222;
-  color: #00ff88;
-  border-left: 4px solid #00ffaa;
-  border-radius: 5px;
+  background-color: #222222;
+  color: #00ff99;
+  border-left: 6px solid #00ffaa;
+  border-radius: 7px;
   outline: none;
-  transition: border 0.3s, background-color 0.3s;
+  font-weight: 700;
+  font-size: 1.1em;
+  box-shadow: 0 0 8px #00ffaa inset;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input:focus {
   border-left-color: #ff00ff;
-  background-color: #111;
+  background-color: #111111;
+  box-shadow:
+    0 0 12px #ff00ff inset,
+    0 0 20px #ff00ff;
+  color: #ff00ff;
 }
 
 /* Botões */
 button {
-  background-color: #111;
+  background-color: #111111;
   color: #00ffaa;
-  border: 2px solid #00ffaa;
-  padding: 12px 20px;
-  margin-top: 25px;
-  margin-right: 10px;
-  border-radius: 5px;
+  border: 3px solid #00ffaa;
+  padding: 15px 30px;
+  margin-top: 30px;
+  margin-right: 15px;
+  border-radius: 10px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s, border 0.3s, transform 0.2s;
+  font-weight: 900;
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  box-shadow:
+    0 0 15px #00ffaa,
+    inset 0 0 10px #00ffaa;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #00ffaa;
-  color: #111;
+  background-color: #ff00ff;
+  color: #111111;
   border-color: #ff00ff;
-  transform: scale(1.05);
+  box-shadow:
+    0 0 30px #ff00ff,
+    inset 0 0 15px #ff00ff;
+  transform: scale(1.1) rotate(-3deg);
+  text-shadow: 0 0 8px #ff00ff;
 }
 
 /* Resultado */
 .resultado {
   max-width: 600px;
-  margin: 30px auto;
-  background-color: #111;
-  color: #00ff88;
-  padding: 20px;
-  border: 2px dashed #00ffaa;
-  border-radius: 8px;
+  margin: 40px auto;
+  background-color: #111111;
+  color: #00ff99;
+  padding: 25px;
+  border: 3px dashed #00ffaa;
+  border-radius: 12px;
   text-align: center;
-  font-size: 1.2em;
-  box-shadow: 0 0 10px #00ffaa88;
+  font-size: 1.3em;
+  font-weight: 700;
+  box-shadow:
+    0 0 15px #00ffaa,
+    inset 0 0 12px #00ffaa;
+  text-transform: uppercase;
 }
 
 /* Resultado inline */
 p {
   text-align: center;
-  margin-top: 30px;
-  font-size: 1.2em;
+  margin-top: 40px;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 6px #00ffaa;
 }
 
 #resultado {
   color: #ff00ff;
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 1.5em;
+  text-shadow:
+    0 0 8px #ff00ff,
+    0 0 20px #ff00ff;
+  letter-spacing: 2px;
 }
 
 /* Testes resultados */
 #testes-resultados {
   max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 25px;
   background-color: #1a1a1a;
-  border: 2px solid #ff00ff;
+  border: 3px solid #ff00ff;
   color: #ffffff;
-  font-size: 0.95em;
+  font-size: 1em;
   white-space: pre-wrap;
-  border-radius: 10px;
-  box-shadow: 0 0 12px #ff00ff88;
+  border-radius: 15px;
+  box-shadow:
+    0 0 20px #ff00ff,
+    inset 0 0 15px #ff00ff;
+  font-family: 'Courier New', Courier, monospace;
 }
