@@ -1,0 +1,1 @@
+Esses codigos são testes de unitários e de componentes, aonde testa todos os inputs e botões, testa também se os imputs estão recebendo valores ou não, se os valores vão validos e se os botões estão funcionando corretamente!
